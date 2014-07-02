@@ -16,9 +16,10 @@ var (
 	client goredis.Client
 )
 
-func setupDB(){
-	client.Addr = "127.0.0.1:6379"
-	// client, err := DialURL("tcp://auth:password@127.0.0.1:6379/0?timeout=10s&maxidle=1")
+func setupDB() {
+        client.Addr = "VM IP:VM PORT"
+        client.Db = 0
+        client.Password = "PASSWORD"
 }
 
 func indexHanlder(w http.ResponseWriter, r *http.Request){
