@@ -17,9 +17,9 @@ var (
 )
 
 func setupDB() {
-        client.Addr = "VM IP:VM PORT"
+        client.Addr = "192.168.3.241:31797"
         client.Db = 0
-        client.Password = "PASSWORD"
+        client.Password = "akiqrnzha5ki4ru803bihwcgxzf4sslb"
 }
 
 func indexHanlder(w http.ResponseWriter, r *http.Request){
